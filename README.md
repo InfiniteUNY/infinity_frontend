@@ -30,6 +30,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load font.
 
+## Project Structure
+
+```
+.
+├── app                 # Routing
+├── public              # Static files
+└── src
+    ├── application     # Application business rules
+    ├── domain          # Enterprise business rules
+    ├── infrastructure  # Framework and drivers
+    └── presentation    # User interface
+```
+
 ### Learn More
 
 To learn more about Next.js, take a look at the following resources:
