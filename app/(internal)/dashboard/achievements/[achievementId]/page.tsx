@@ -4,4 +4,6 @@ type Props = {
   };
 };
 
-export default function SingleAchievementPage({ params }: Props) {}
+export default function SingleAchievementPage({ params }: Props) {
+  return <section></section>;
+}

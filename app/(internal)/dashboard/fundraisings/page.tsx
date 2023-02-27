@@ -1,1 +1,3 @@
-export default function FundrasingsPage() {}
+export default function FundrasingsPage() {
+  return <section></section>;
+}

@@ -1,1 +1,3 @@
-export default function ToolsPage() {}
+export default function ToolsPage() {
+  return <section></section>;
+}

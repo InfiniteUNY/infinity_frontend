@@ -1,6 +1,9 @@
+import 'reflect-metadata';
+import '@/presentation/styles/globals.css';
+import { InternalFooter } from '@/presentation/components/internal/shared/Footer';
+import { InternalHeader } from '@/presentation/components/internal/shared/Header';
 import { Poppins } from '@next/font/google';
 import { ReactNode } from 'react';
-import '@/presentation/styles/globals.css';
 
 type Props = {
   children: ReactNode;
@@ -17,7 +20,19 @@ export default function InternalLayout({ children }: Props) {
   return (
     <html lang="id-ID" className={poppins.variable}>
       <head />
-      <body>{children}</body>
+
+      <body>
+        <a
+          href="#content"
+          className="absolute top-2 -left-96 z-[-99] focus:left-2 focus:z-50 active:left-2 active:z-50"
+        >
+          Lewati ke konten
+        </a>
+
+        <InternalHeader />
+        {children}
+        <InternalFooter />
+      </body>
     </html>
   );
 }

@@ -4,4 +4,6 @@ type Props = {
   };
 };
 
-export default function SingleFreepikAssetPage({ params }: Props) {}
+export default function SingleFreepikAssetPage({ params }: Props) {
+  return <section></section>;
+}

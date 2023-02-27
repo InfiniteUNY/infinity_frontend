@@ -1,1 +1,3 @@
-export default function MembersPage() {}
+export default function MembersPage() {
+  return <section></section>;
+}

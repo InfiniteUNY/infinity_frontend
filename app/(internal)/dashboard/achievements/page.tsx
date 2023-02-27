@@ -1,1 +1,3 @@
-export default function AchievementsPage() {}
+export default function AchievementsPage() {
+  return <section></section>;
+}

@@ -4,4 +4,6 @@ type Props = {
   };
 };
 
-export default function SingleFundrasingPage({ params }: Props) {}
+export default function SingleFundrasingPage({ params }: Props) {
+  return <section></section>;
+}

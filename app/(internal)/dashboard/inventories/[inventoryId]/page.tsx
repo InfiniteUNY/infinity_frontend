@@ -4,4 +4,6 @@ type Props = {
   };
 };
 
-export default function SingleInventoryPage({ params }: Props) {}
+export default function SingleInventoryPage({ params }: Props) {
+  return <section></section>;
+}
