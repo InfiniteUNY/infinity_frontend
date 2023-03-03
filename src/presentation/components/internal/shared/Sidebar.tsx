@@ -22,17 +22,20 @@ export function InternalSidebar({ title, menus, backButton }: Props) {
   const [
     sidebarExtended,
     sidebarHovered,
+    setSidebarOpenedState,
     getSidebarExtendedState,
     setSidebarExtendedState,
     setSidebarHoveredState,
   ] = useStore(internalStore, (s) => [
     s.sidebarExtended,
     s.sidebarHovered,
+    s.setSidebarOpenedState,
     s.getSidebarExtendedState,
     s.setSidebarExtendedState,
     s.setSidebarHoveredState,
   ]);
 
+  const hadleCoverClick = () => setSidebarOpenedState(false);
   const handleExtendButton = () => setSidebarExtendedState(!sidebarExtended);
   const handleMouseEnter = () => setSidebarHoveredState(true);
   const handleMouseLeave = () => setSidebarHoveredState(false);
@@ -62,6 +65,7 @@ export function InternalSidebar({ title, menus, backButton }: Props) {
   return (
     <>
       <div
+        onClick={hadleCoverClick}
         className={`fixed left-0 top-0 w-full h-full z-[5] bg-black opacity-30 lg:hidden ${
           sidebarOpened ? '' : 'hidden'
         }`}
